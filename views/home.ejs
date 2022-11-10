@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head.ejs')%>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="body-text">
+        <header>
+            <%- include ('../partials/header.ejs')%>
+        </header>
+        <div id="welcome">
+            <h2 class="h2">Welcome!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quisquam praesentium quas rerum tempora minus, alias facere modi ullam. Itaque mollitia incidunt cum libero sunt, impedit reprehenderit! Quae, suscipit sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit fuga minima cumque quidem quae unde dignissimos hic, sint, nam assumenda id accusantium vero molestiae! Rerum, culpa dolor? Vel, veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit fuga minima cumque quidem quae unde dignissimos hic, sint, nam assumenda id accusantium vero molestiae! Rerum, culpa dolor? Vel, veniam.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quisquam praesentium quas rerum tempora minus, alias facere modi ullam. Itaque mollitia incidunt cum libero sunt, impedit reprehenderit! Quae, suscipit sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit fuga minima cumque quidem quae unde dignissimos hic, sint, nam assumenda id accusantium vero molestiae! Rerum, culpa dolor? Vel, veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit fuga minima cumque quidem quae unde dignissimos hic, sint, nam assumenda id accusantium vero molestiae! Rerum, culpa dolor? Vel, veniam.</p>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</div>
+    <script>
+        $(() => {
+            $('.content').click(function(){
+            $(this).toggleClass('active');
+            $(this).parent().find('.arrow').toggleClass('arrow-animate');
+            $(this).parent().find('.more-content').slideToggle(280);
+            });
+        })
+    </script>
+</body>
+</html>

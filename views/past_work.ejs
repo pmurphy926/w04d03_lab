@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head.ejs')%>
+</head>
+<body>
+    <div class="bg-image"></div>
+        <div class="body-text">
+            <header>
+                <%- include ('../partials/header.ejs')%>
+            </header>
+            <h2>Events</h2>
+            <ul id="">
+            <% for (let i = 0; i < ourEvents.length; i++){ %>
+                <h3><%= ourEvents[i].type %></h3>
+                <p><%= ourEvents[i].description %></p>
+        <% } %>
+    </ul>
+    </div>
+    <script>
+    //     //Solution found on stack overflow - this function loops through the a elements and assigns each a unique ID
+    //     $(document).ready(function() {
+    //     let a = $(".past-work");
+    //     let i = 0;
+    //     $(a).each(function(index) {
+    //         i++;
+    //         $(this).attr("id", "event-link" + i);
+    //         //this is my solution to add unique hrefs so they bring the user to different parts of the page
+    //         $('#event-link1').attr('href', '#birthday')
+    //         $('#event-link2').attr('href', '#charity')
+    //         $('#event-link3').attr('href', '#celebrity')
+    //     });
+    // });
+    </script>
+</body>
+</html>

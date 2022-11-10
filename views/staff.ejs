@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('../partials/head.ejs')%>
+    </head>
+    <body>
+        <div class="bg-image"></div>
+            <div class="body-text">
+                <header>
+                    <%- include ('../partials/header.ejs')%>
+                </header>
+                <h2>Meet Our Staff</h2>
+                    <% for (let i = 0; i < ourStaff.length; i++){ %>
+                        <div class="staff">
+                            <h3><%= ourStaff[i].name + ' - ' + ourStaff[i].position %></h3>
+                            <p><%= ourStaff[i].bio %></p>
+                    </div>
+                <% } %>
+            </div> 
+    </body>
+    </html>

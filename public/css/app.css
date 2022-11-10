@@ -1,0 +1,182 @@
+body, html {
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.accordion{
+    position: relative;
+    box-shadow: 0 1px 7px #DEDBD2;
+    width: 100%
+}
+
+.accordion, #content{
+    background-color: #AD2831;
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.accordion .arrow{
+    content:'';
+    position: absolute;
+    right: 0;
+    right: 30px;
+    top: 65px;
+    opacity: 1;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 40px solid #AD2831;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+.accordion:hover .arrow, .accordion .arrow-animate{
+    border-top: 40px solid #FFD97D;
+    transform: translateY(43px);
+}
+
+.accordion .more-content{
+    background-color: white;
+    display: none;
+    padding: 30px;
+    color: #000;
+}
+
+.more-content li {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.more-content li img {
+  width: 150px;
+  display: block;
+  
+}
+
+.more-content {
+    text-align: center;
+}
+
+.accordion .content:hover, .accordion .active{
+    background-color: #E01E37; 
+}  
+
+/* blurred background adapted from w3schools */
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url(../../images/background.jpg);
+    filter: blur(10px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.body-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    height: 75%;
+}
+
+#menu-items li {
+    list-style: none;
+    height: 100%;
+}
+
+.past-work {
+    list-style: none;
+}
+
+#nav li {
+    display: inline;
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#nav li a {
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    background-color: transparent;
+}
+
+#nav {
+    margin-bottom: 5px;
+    margin-top: 1px;
+}
+
+h1 {
+    margin-top: 2px;
+    color:#AD2831;
+    text-shadow: white 1px 1px;
+}
+
+.links li {
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+.links li a {
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+.links li a:visited {
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}

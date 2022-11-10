@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <%- include ('../partials/head.ejs')%>
+	</head>
+	<body>
+        <div class="bg-image"></div>
+        <div class="body-text">
+            <header>
+                <%- include ('../partials/header.ejs')%>
+            </header>
+            <% if (ourLinks.length > 1) { %>
+                <h2>Book with Us!</h2>
+            <% } %>
+            <ul class="links">
+                <% for (let i = 0; i < ourLinks.length; i++){ %>
+                    <li>
+                    <!-- grab the value of the link for the href and grab the key name for link text. since each link object only has one key value pair, we can hardcode the index to 0 -->
+                        <a href="<%= Object.values(ourLinks[i])[0] %>" target="_blank">
+                            <%= Object.keys(ourLinks[i])[0] %>
+                        </a>
+                    </li>
+                        <% } %>
+            </ul>
+            <h2>Feedback</h2>
+            <p>If you have dined with us in the past, please let us know how it went below:</p>
+            <input type="text">
+            <input type="submit">
+        </div>
+        </body>
+</html>   
